@@ -25,8 +25,13 @@ phases:
       - composer install --dev
   pre_build:
     commands:
+<<<<<<< HEAD
       ## .env.dev -> .envにリネーム
       - mv .env.dev .env
+=======
+      ## .dev.env -> .envにリネーム
+      - mv .dev.env .env
+>>>>>>> laravel
   build:
     commands:
       ## Dockerイメージのビルド

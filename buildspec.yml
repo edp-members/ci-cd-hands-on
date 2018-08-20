@@ -32,8 +32,13 @@ phases:
       ## Dockerイメージのタグとして使用するため、Gitのコミットハッシュを取得
       - IMAGE_TAG=$CODEBUILD_RESOLVED_SOURCE_VERSION
 
+<<<<<<< HEAD
       ## .env.dev -> .envにリネーム
       - mv .env.dev .env
+=======
+      ## .dev.env -> .envにリネーム
+      - mv .dev.env .env
+>>>>>>> laravel
   build:
     commands:
       ## Dockerイメージのビルド
